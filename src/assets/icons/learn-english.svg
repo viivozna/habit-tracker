@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Learn English habit">
+  <defs><linearGradient id="bg" x1="20" y1="18" x2="76" y2="78" gradientUnits="userSpaceOnUse"><stop stop-color="#EEE9FF"/><stop offset="1" stop-color="#DCD4FA"/></linearGradient></defs>
+  <circle cx="48" cy="48" r="36" fill="url(#bg)"/>
+  <path d="M48 39.5c-4-3.3-9.4-4.5-15.5-3.2a2.5 2.5 0 0 0-2 2.5v20.5a2.5 2.5 0 0 0 3.1 2.4c5.7-1.4 10.6-.3 14.4 2.8V39.5Z" fill="#6040A2"/>
+  <path d="M48 39.5c4-3.3 9.4-4.5 15.5-3.2a2.5 2.5 0 0 1 2 2.5v20.5a2.5 2.5 0 0 1-3.1 2.4c-5.7-1.4-10.6-.3-14.4 2.8V39.5Z" fill="#6948AB"/>
+  <path d="M48 41v21" stroke="#A899D4" stroke-linecap="round" stroke-width="2.5"/>
+</svg>

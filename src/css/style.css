@@ -1,0 +1,221 @@
+body {
+  background: #f5f7fb;
+  color: #0f172a;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header,
+.progress-line,
+.progress-card,
+.habits,
+.motivation,
+.reminder {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.header__logo-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.header__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header__subtitle {
+  display: none;
+}
+
+.header__date--hidden {
+  display: none;
+}
+
+.dashboard__top, 
+.dashboard__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.progress-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+} 
+
+.progress-card__img {
+  width: 48px;
+  height: 48px;
+}
+
+.motivation {
+  background-image: url(/src/assets/icons/motivation-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.motivation__img {
+  width: 40px;
+  height: 40px;
+}
+
+.reminder__icon,
+.reminder__item-img {
+  width: 28px;
+  height: 28px;
+}
+
+.habits__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.habits__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 2px 16px;
+  background: #2fa84f;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.habits__button--icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.habits__button--name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.habits__subtitle {
+  display: none;
+}
+
+.habits__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.habits__list--item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+
+.item__description {
+  display: none;
+}
+
+.item__icon img {
+  width: 55px;
+  height: 55px;
+}
+
+.item__checkbox {
+    display: none;
+}
+
+.item__checkmark {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    color: transparent;
+    cursor: pointer;
+}
+
+.item__checkbox:checked+.item__checkmark {
+    background: green;
+    border-color: green;
+    color: white;
+}
+
+@media (min-width: 768px) {
+  .progress-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .habits__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .habits__button {
+    width: auto;
+  }
+
+  .habits__subtitle {
+    display: block;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__subtitle {
+      display: block;
+    }
+  
+  .header__icon--hidden {
+    display: block;
+  }
+
+  .header__date--hidden {
+    display: block;
+  }
+
+  .dashboard__top {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .dashboard__content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .item__status {
+    display: block;
+  }
+
+  .item__description {
+    display: block;
+  }
+
+
+}

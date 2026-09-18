@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Total habits">
+  <defs><linearGradient id="bg" x1="12" y1="8" x2="53" y2="57" gradientUnits="userSpaceOnUse"><stop stop-color="#E3F3FF"/><stop offset="1" stop-color="#C9E7FF"/></linearGradient></defs>
+  <circle cx="32" cy="32" r="28" fill="url(#bg)"/>
+  <g fill="#3E8EDB">
+    <circle cx="21" cy="22" r="3"/><circle cx="21" cy="32" r="3"/><circle cx="21" cy="42" r="3"/>
+    <rect x="28" y="19" width="16" height="6" rx="3"/><rect x="28" y="29" width="16" height="6" rx="3"/><rect x="28" y="39" width="16" height="6" rx="3"/>
+  </g>
+</svg>

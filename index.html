@@ -2,12 +2,244 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>habit-tracker</title>
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>HabitFlow</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="header__left">
+        <div class="logo">
+          <img
+            src="/src/assets/icons/logo-habitflow.png"
+            alt="Icon of logo"
+            class="header__logo-icon"
+          />
+          <h1>HabitFlow</h1>
+        </div>
+        <img
+          src="/src/assets/icons/file-heart.svg"
+          alt="text"
+          class="header__icon header__icon--hidden"
+        />
+        <p class="header__subtitle">Build your better habits every day</p>
+      </div>
+      <div class="header__date">
+        <img
+          src="/src/assets/icons/calendar.svg"
+          alt="icon of calendar"
+          class="header__icon"
+        />
+        <span id="current-date" class="header__date--hidden"></span>
+      </div>
+    </header>
+    <main class="dashboard">
+      <section class="dashboard__top">
+        <div class="progress-line">
+          <h2 class="progress-line__title">Today's Progress</h2>
+          <p class="progress-line__subtitle">
+            Keep going! Small steps make big changes.
+          </p>
+          <div class="progress-line__content">
+            <div class="progress-line__bar">
+              <div class="progress-line__fill"></div>
+            </div>
+            <span class="progress-line__percent">60%</span>
+          </div>
+          <div class="progress-line__counter">
+            <p>3 of 5 completed</p>
+          </div>
+        </div>
+        <div class="progress-cards">
+          <div class="progress-card progress-card__habits">
+            <img
+              src="/src/assets/icons/total-habits.svg"
+              alt="Icon of total habits"
+              class="progress-card__img"
+            />
+            <p class="progress-card__title">Total Habits</p>
+            <span class="progress-card__value" id="total-habits"></span>
+          </div>
+          <div class="progress-card progress-card__completed">
+            <img
+              src="/src/assets/icons/completed-today.svg"
+              alt="Icon of checkmark"
+              class="progress-card__img"
+            />
+            <p class="progress-card__title">Completed Today</p>
+            <span class="progress-card__value" id="completed-today"></span>
+          </div>
+          <div class="progress-card progress-card__streak">
+            <img
+              src="/src/assets/icons/current-streak.svg"
+              alt="Icon of Streak"
+              class="progress-card__img"
+            />
+            <p class="progress-card__title">Current Streak</p>
+            <span class="progress-card__value" id="current-streak"></span>
+          </div>
+        </div>
+      </section>
+      <section class="dashboard__content">
+        <div class="habits">
+          <div class="habits__header">
+            <div class="habits__info">
+              <h2 class="habits__title">Today's Habits</h2>
+              <p class="habits__subtitle">
+                Check off your habits as you complete them.
+              </p>
+            </div>
+            <button class="habits__button">
+              <img
+                src="/src/assets/icons/plus.svg"
+                alt="add"
+                class="habits__button--icon"
+              />
+              <p class="habits__button--name">Add Habit</p>
+            </button>
+          </div>
+          <ul class="habits__list">
+            <li class="habits__list--item">
+              <div class="item__icon">
+                <img src="/src/assets/icons/water.svg" alt="habit icon" />
+              </div>
+
+              <div class="item__content">
+                <h3 class="item__title">Drink Water</h3>
+                <p class="item__description">Aim for at least 2 liters today</p>
+              </div>
+
+              <span class="item__status">Not done</span>
+
+              <label class="item__check">
+                <input type="checkbox" class="item__checkbox" />
+                <span class="item__checkmark">✓</span>
+              </label>
+            </li>
+            <li class="habits__list--item">
+              <div class="item__icon">
+                <img src="/src/assets/icons/workout.svg" alt="habit icon" />
+              </div>
+              <div class="item__content">
+                <h3 class="item__title">Workout</h3>
+                <p class="item__description">At least 30 minutes of exercise</p>
+              </div>
+              <span class="item__status">Not done</span>
+
+              <label class="item__check">
+                <input type="checkbox" class="item__checkbox" />
+                <span class="item__checkmark">✓</span>
+              </label>
+            </li>
+            <li class="habits__list--item">
+              <div class="item__icon">
+                <img
+                  src="/src/assets/icons/learn-english.svg"
+                  alt="habit icon"
+                />
+              </div>
+              <div class="item__content">
+                <h3 class="item__title">Learn English</h3>
+                <p class="item__description">Study for 20 minutes</p>
+              </div>
+              <span class="item__status">Not done</span>
+
+              <label class="item__check">
+                <input type="checkbox" class="item__checkbox" />
+                <span class="item__checkmark">✓</span>
+              </label>
+            </li>
+            <li class="habits__list--item">
+              <div class="item__icon">
+                <img src="/src/assets/icons/programming.svg" alt="habit icon" />
+              </div>
+              <div class="item__content">
+                <h3 class="item__title">Programming</h3>
+                <p class="item__description">Work on a personal project</p>
+              </div>
+              <span class="item__status">Not done</span>
+
+              <label class="item__check">
+                <input type="checkbox" class="item__checkbox" />
+                <span class="item__checkmark">✓</span>
+              </label>
+            </li>
+            <li class="habits__list--item">
+              <div class="item__icon">
+                <img src="/src/assets/icons/read-book.svg" alt="habit icon" />
+              </div>
+              <div class="item__content">
+                <h3 class="item__title">Read a Book</h3>
+                <p class="item__description">Read at least 10 pages</p>
+              </div>
+              <span class="item__status">Not done</span>
+
+              <label class="item__check">
+                <input type="checkbox" class="item__checkbox" />
+                <span class="item__checkmark">✓</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="sidebar">
+          <div class="motivation">
+            <img
+              src="/src/assets/icons/motivation.svg"
+              alt="motivation icon"
+              class="motivation__img"
+            />
+            <h2 class="motivation__title">
+              "A better you is a brighter tomorrow"
+            </h2>
+            <p class="motivation__text">Keep showing up!</p>
+          </div>
+
+          <div class="reminder">
+            <div class="reminder__header">
+              <img
+                src="/src/assets/icons/reminder.svg"
+                alt="reminder icon"
+                class="reminder__icon"
+              />
+              <h2 class="reminder__title">A Quick Reminder</h2>
+            </div>
+            <ul class="reminder__list">
+              <li class="reminder__item">
+                <img
+                  src="src/assets/icons/reminder-done-icon.png"
+                  alt="icon"
+                  class="reminder__item-img"
+                />
+                <p class="reminder__item-text">Be consistent</p>
+              </li>
+              <li class="reminder__item">
+                <img
+                  src="src/assets/icons/reminder-done-icon.png"
+                  alt="icon"
+                  class="reminder__item-img"
+                />
+                <p class="reminder__item-text">Progress over perfection</p>
+              </li>
+              <li class="reminder__item">
+                <img
+                  src="src/assets/icons/reminder-done-icon.png"
+                  alt="icon"
+                  class="reminder__item-img"
+                />
+                <p class="reminder__item-text">
+                  Small habits create big results
+                </p>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Viktoria. Pet project for learning purposes.</p>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

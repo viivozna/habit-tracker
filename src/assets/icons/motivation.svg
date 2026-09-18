@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Motivation sprout">
+  <path d="M32 51V35" fill="none" stroke="#368D59" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30.8 36.7c-10.3.2-17.2-5-18.3-14.7 9.7-.5 16.8 4.4 18.3 14.7Z" fill="#55BE76"/>
+  <path d="M33.2 36.7C34.7 26.4 41.8 21.5 51.5 22c-1.1 9.7-8 14.9-18.3 14.7Z" fill="#2FA86B"/>
+  <path d="M25 51h14" fill="none" stroke="#368D59" stroke-width="5" stroke-linecap="round"/>
+</svg>

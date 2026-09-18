@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Water habit">
+  <defs><linearGradient id="bg" x1="20" y1="18" x2="76" y2="78" gradientUnits="userSpaceOnUse"><stop stop-color="#E4F5FF"/><stop offset="1" stop-color="#CDEAFF"/></linearGradient><linearGradient id="drop" x1="48" y1="28" x2="48" y2="67" gradientUnits="userSpaceOnUse"><stop stop-color="#55B8FF"/><stop offset="1" stop-color="#0877DD"/></linearGradient></defs>
+  <circle cx="48" cy="48" r="36" fill="url(#bg)"/>
+  <path d="M48 25C43 34.1 34.5 41.3 34.5 51.4A13.5 13.5 0 0 0 61.5 51.4C61.5 41.3 53 34.1 48 25Z" fill="url(#drop)"/>
+  <path d="M42 53.5c0 5 3.5 8.5 8.4 8.5" fill="none" stroke="#A4DEFF" stroke-linecap="round" stroke-width="3.5"/>
+</svg>
