@@ -2,6 +2,9 @@ body {
   background: #f5f7fb;
   color: #0f172a;
   font-family: Arial, sans-serif;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
 }
 
 .footer {
@@ -54,6 +57,33 @@ body {
 .progress-card__img {
   width: 48px;
   height: 48px;
+}
+
+.progress-line__bar {
+  width: 100%;
+  height: 15px;
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-line__fill {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.progress-line__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-line__percent {
+  min-width: 40px;
+  font-weight: 600;
 }
 
 .motivation {
